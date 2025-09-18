@@ -2,320 +2,152 @@
 title: Inicio
 layout: home
 nav_order: 1
-description: "Módulo de autoaprendizaje para realizar el estudio de prevalencia puntual de IAAS en EsSalud. OIIS 2025"
+description: "Módulo de autoaprendizaje para el registro de cáncer. OIIS 2025"
 permalink: /
 ---
 
 <html>
 <head>
-  <title>Introducción</title>
+  <title>REGINA Registro de cáncer</title>
 </head>
 <body>
-<h1>Estudio de prevalencia de IAAS</h1>
-<p>Este módulo de autoaprendizaje es sobre el estudio de prevalencia puntual (EPP) de infecciones asociadas a la atención de salud (IAAS). Es un complemento para el Documento Técnico Protocolo del EPP-IAAS en EsSalud, que entró en vigencia el 2024.</p>
-<h2>Conceptos básicos</h2>
-<h3>Prevalencia</h3>
-<p>Se define a la <b>proporción de personas con la enfermedad en un momento dado (proporción de pacientes hospitalizados que tienen una infección nosocomial)</b>. Esto también se conoce como prevalencia puntual. Se calcula número de individuos con la enfermedad dividido por el número de individuos de la población observada.</p>
-<p>Para fines del estudio, <b>se considera las IAAS que están presentes y activas en el paciente al momento de la encuesta</b>. No se considerará las infecciones que el paciente haya padecido durante su hospitalización y que ya estén resueltas o curadas.</p>
-<h2>Códigos de IAAS para el estudio de prevalencia</h2>
-<p>Se debe utilizar los códigos con tres a más dígitos para el estudio.</p>
+<h1>Informe epidemiológico anual</h1>
+<p>El informe epidemiológico anual sobre la situación del cáncer en EsSalud debe contener las siguientes secciones, siguiendo las recomendaciones de la IARC.</p>
+<h2>Estructura del informe</h2>
+<h3>Resumen ejecutivo</h3>
+<p>Incluye:</p>
+<ul>
+  <li>Número de casos analíticos incidentes</li>
+  <li>Porcentaje de casos analíticos por sexo y por etapa de vida</li>
+  <li>Principales tipos de cáncer en los casos analíticos: frecuencia absoluta y relativa</li>
+  <li>Número de defunciones por cáncer durante el año de análisis</li>
+  <li>Porcentaje de defunciones por cáncer por sexo y por etapa de vida</li>
+  <li>Principales tipos de cáncer en las defunciones por cáncer: frecuencia absoluta y relativa</li>
+</ul>
+<h3>Antecedentes</h3>
+<p>Incluye:</p>
+<ul>
+  <li>Estructura de la organización del Registro de cáncer, incluyendo lista de miembros</li>
+  <li>Descripción del proceso de registro</li>
+  <li>Descripción de las fuentes de información del registro</li>
+  <li>Lista de códigos considerados en el Registro de cáncer</li>
+  <li>Definiciones</li>
+  <li>Descripción de la población objetivo</li>
+  <li>Datos de la población objetivo usada en los cálculos de indicadores, incluyendo pirámide poblacional por quinquenios y sexo</li>
+  <li>Descripción de términos y técnicas estadísticas utilizadas</li>
+</ul>
+<h3>Análisis epidemiológico</h3>
+<p>El análisis de la información considera solo los casos incidentes de cáncer de tipo analítico correspondientes al año de estudio, que son las clases 0, 1 y 2 de la tabla "Clases de caso para el registro de cáncer".</p>
 <table>
   <tr>
-    <th>Código</th>
-    <th>Siglas</th>
-    <th>Infecciones asociadas a la atención de salud</th>
+    <th>Clase</th>
+    <th>Descripción</th>
+    <th>Tipo</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <th>Diagnosticado en el hospital desde la fecha de inicio de registro, recibiendo tratamiento inicial en otra institución</th>
+    <th>Analítico</th>
   </tr>
   <tr>
     <th>1</th>
-    <th>ITS</th>
-    <th>Infección del torrente sanguíneo</th>
-  </tr>
-  <tr>
-    <td>1.1</td>
-    <td>ITS</td>
-    <td>Infección del torrente sanguíneo: incluye bacteriemia, fungemia, septicemia y sepsis</td>
+    <th>Diagnosticado y tratado inicialmente (total o parcial) en el hospital reportante</th>
+    <th>Analítico</th>
   </tr>
   <tr>
     <th>2</th>
-    <th>ITU</th>
-    <th>Infección del tracto urinario</th>
-  </tr>
-  <tr>
-    <td>2.1</td>
-    <td>ITU</td>
-    <td>Infección urinaria</td>
-  </tr>
-  <tr>
-    <td>2.2</td>
-    <td>OITU</td>
-    <td>Otras infecciones del tracto urinario</td>
+    <th>Diagnosticado en otra institución y recibiendo todo o parte del tratamiento inicial en el hospital reportante</th>
+    <th>Analítico</th>
   </tr>
   <tr>
     <th>3</th>
-    <th>ISQ</th>
-    <th>Infección del sitio quirúrgico</th>
-  </tr>
-  <tr>
-    <td>3.1</td>
-    <td>ISQS</td>
-    <td>Infección del sitio quirúrgico superficial</td>
-  </tr>
-  <tr>
-    <td>3.2</td>
-    <td>ISQP</td>
-    <td>Infección del sitio quirúrgico profunda</td>
-  </tr>
-  <tr>
-    <td>3.3</td>
-    <td>ISQOE</td>
-    <td>Infección del sitio quirúrgico de órgano / espacio</td>
+    <th>Diagnosticado en otro hospital, y recibiendo todo o parte del primer ciclo de tratamiento en otro hospital</th>
+    <th>No analítico</th>
   </tr>
   <tr>
     <th>4</th>
-    <th>NEU</th>
-    <th>Neumonía</th>
-  </tr>
-  <tr>
-    <td>4.1</td>
-    <td>NEU1</td>
-    <td>Neumonía definida clínicamente</td>
+    <th>Diagnosticado y tratado en el hospital reportante anteriormente a la fecha de inicio de registro</th>
+    <th>No analítico</th>
   </tr>
   <tr>
     <th>5</th>
-    <th>TRS</th>
-    <th>Infecciones del tracto respiratorio superior</th>
-  </tr>
-  <tr>
-    <td>5.1</td>
-    <td>TRS</td>
-    <td>Infecciones del tracto respiratorio superior: faringitis, laringitis, epiglotitis</td>
+    <th>Diagnosticado al momento de la autopsia</th>
+    <th>No analítico</th>
   </tr>
   <tr>
     <th>6</th>
-    <th>TRI</th>
-    <th>Infecciones del tracto respiratorio inferior diferente a neumonía</th>
-  </tr>
-  <tr>
-    <td>6.1</td>
-    <td>BTBT</td>
-    <td>Bronquitis, traqueobronquitis, bronquiolitis, traqueítis sin evidencia de neumonía</td>
-  </tr>
-  <tr>
-    <td>6.2</td>
-    <td>OITRI</td>
-    <td>Otras infecciones del tracto respiratorio inferior</td>
-  </tr>
-  <tr>
-    <th>7</th>
-    <th>ITR</th>
-    <th>Infecciones del tracto reproductor</th>
-  </tr>
-  <tr>
-    <td>7.1</td>
-    <td>END</td>
-    <td>Endometritis</td>
-  </tr>
-  <tr>
-    <td>7.2</td>
-    <td>EPI</td>
-    <td>Infección de episiotomía</td>
-  </tr>
-  <tr>
-    <td>7.3</td>
-    <td>OITRMF</td>
-    <td>Otras infecciones del tracto reproductivo masculino o femenino</td>
-  </tr>
-  <tr>
-    <th>8</th>
-    <th>TGI</th>
-    <th>Infecciones del sistema gastrointestinal</th>
-  </tr>
-  <tr>
-    <td>8.1</td>
-    <td>GAEN</td>
-    <td>Gastroenteritis</td>
-  </tr>
-  <tr>
-    <td>8.2</td>
-    <td>TGI</td>
-    <td>Infección del tracto gastrointestinal</td>
-  </tr>
-  <tr>
-    <td>8.3</td>
-    <td>HEPA</td>
-    <td>Hepatitis</td>
-  </tr>
-  <tr>
-    <td>8.4</td>
-    <td>IAB</td>
-    <td>Infección intraabdominal</td>
-  </tr>
-  <tr>
-    <td>8.5</td>
-    <td>NEC</td>
-    <td>Enterocolitis necrotizante</td>
+    <th>Diagnosticado solo por certificado de defunción</th>
+    <th>No analítico</th>
   </tr>
   <tr>
     <th>9</th>
-    <th>IPTB</th>
-    <th>Infección de la piel y otros tejidos blandos</th>
-  </tr>
-  <tr>
-    <td>9.1</td>
-    <td>PIEL</td>
-    <td>Infección de la piel</td>
-  </tr>
-  <tr>
-    <td>9.2</td>
-    <td>TBL</td>
-    <td>Infección del tejido blando</td>
-  </tr>
-  <tr>
-    <td>9.3</td>
-    <td>LPPI</td>
-    <td>Lesión por presión infectada</td>
-  </tr>
-  <tr>
-    <td>9.4</td>
-    <td>QUEM</td>
-    <td>Infección de quemadura</td>
-  </tr>
-  <tr>
-    <td>9.5</td>
-    <td>MAST</td>
-    <td>Absceso de mama o mastitis</td>
-  </tr>
-  <tr>
-    <td>9.6</td>
-    <td>ONFA</td>
-    <td>Onfalitis</td>
-  </tr>
-  <tr>
-    <td>9.7</td>
-    <td>PUIN</td>
-    <td>Pustulosis del infante</td>
-  </tr>
-  <tr>
-    <td>9.8</td>
-    <td>CIRC</td>
-    <td>Infección de la circuncisión en el recién nacido</td>
-  </tr>
-  <tr>
-    <th>10</th>
-    <th>IOA</th>
-    <th>Infecciones óseas y de las articulaciones</th>
-  </tr>
-  <tr>
-    <td>10.1</td>
-    <td>OSTE</td>
-    <td>Osteomielitis</td>
-  </tr>
-  <tr>
-    <td>10.2</td>
-    <td>ARBU</td>
-    <td>Infección de la articulación o bursa</td>
-  </tr>
-  <tr>
-    <td>10.3</td>
-    <td>DISC</td>
-    <td>Infección del espacio discal</td>
-  </tr>
-  <tr>
-    <th>11</th>
-    <th>SNC</th>
-    <th>Infecciones del sistema nervioso central</th>
-  </tr>
-  <tr>
-    <td>11.1</td>
-    <td>IIC</td>
-    <td>Infección intracraneana</td>
-  </tr>
-  <tr>
-    <td>11.2</td>
-    <td>MEVE</td>
-    <td>Meningitis o ventriculitis</td>
-  </tr>
-  <tr>
-    <td>11.3</td>
-    <td>AMESM</td>
-    <td>Absceso de médula espinal sin meningitis</td>
-  </tr>
-  <tr>
-    <th>12</th>
-    <th>SCV</th>
-    <th>Infecciones del sistema cardiovascular</th>
-  </tr>
-  <tr>
-    <td>12.1</td>
-    <td>ENDO</td>
-    <td>Endocarditis</td>
-  </tr>
-  <tr>
-    <td>12.2</td>
-    <td>MIPE</td>
-    <td>Miocarditis o pericarditis</td>
-  </tr>
-  <tr>
-    <td>12.3</td>
-    <td>MEDI</td>
-    <td>Mediastinitis</td>
-  </tr>
-  <tr>
-    <td>12.4</td>
-    <td>VASC</td>
-    <td>Infección arterial o venosa</td>
-  </tr>
-  <tr>
-    <th>13</th>
-    <th>IOON</th>
-    <th>Infección del ojo, oído y nariz</th>
-  </tr>
-  <tr>
-    <td>13.1</td>
-    <td>CONJ</td>
-    <td>Conjuntivitis</td>
-  </tr>
-  <tr>
-    <td>13.2</td>
-    <td>ODC</td>
-    <td>Otras infecciones oculares diferentes a conjuntivitis</td>
-  </tr>
-  <tr>
-    <td>13.3</td>
-    <td>IUDO</td>
-    <td>Infección del oído y mastoides</td>
-  </tr>
-  <tr>
-    <td>13.3.1</td>
-    <td>OTIEX</td>
-    <td>Otitis externa</td>
-  </tr>
-  <tr>
-    <td>13.3.2</td>
-    <td>OTIME</td>
-    <td>Otitis media</td>
-  </tr>
-  <tr>
-    <td>13.3.3</td>
-    <td>OTIN</td>
-    <td>Otitis interna</td>
-  </tr>
-  <tr>
-    <td>13.4</td>
-    <td>MAST</td>
-    <td>Mastoiditis</td>
-  </tr>
-  <tr>
-    <td>13.5</td>
-    <td>ORAL</td>
-    <td>Infección de cavidad oral</td>
-  </tr>
-  <tr>
-    <td>13.6</td>
-    <td>SINU</td>
-    <td>Sinusitis</td>
+    <th>Desconocido</th>
+    <th>No analítico</th>
   </tr>
 </table>
-
+<p>Para el análisis epidemiológico, los cánceres hematológicos se agrupan de la siguiente forma:</p>
+<ul>
+  <li>Leucemia: C91, C92, C93, C94, C95</li>
+  <li>Linfomas:
+    <ul>
+      <li>Linfoma Hodgkin: C81</li>
+      <li>Linfoma no Hodgkin: C82, C83, C84, C85</li>
+    </ul>
+  </li>
+</ul>
+<p>Subgrupos para incluir en el análisis</p>
+<dl>
+  <dt>Cáncer infantil</dt>
+  <dd>Casos en menores de 18 años, usando la clasificación ICCC-3 en lugar de CIE-10 para el tipo de cáncer y la clasificación de Toronto para el estadiaje</dd>
+  <dt>Cáncer ginecológico</dt>
+  <dd>Cáncer de cuello uterino y de mama en mujeres</dd>
+</dl>
+<p>Tablas y gráficos que se debe presentar</p>
+<ol>
+  <li>Número de casos según etapa de vida y sexo (tabla y pirámide poblacional)</li>
+  <li>Número de casos según edad al diagnóstico agrupada en quinquenios y sexo (tabla y pirámide poblacional)</li>
+  <li>Número de casos según tipo de cáncer (grupo tabular del diagnóstico clínico) y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según IPRESS reportante, edad al diagnóstico agrupada en quinquenios y sexo (tabla)</li>
+  <li>Número de casos según IPRESS reportante y tipo de cáncer (grupo tabular) (tabla)</li>
+  <li>Tasas de incidencia anuales según edad al diagnóstico agrupada en quinquenios y sexo (tabla)</li>
+  <li>Tasas de incidencia anuales según tipo de cáncer (grupo tabular del diagnóstico clínico) (tabla)</li>
+  <li>Número de casos según ocupación y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según método del primer diagnóstico y sexo (también para los 5 primeros tipos de cáncer de la Red) (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según estadio clínico al diagnóstico y sexo (también para los 5 primeros tipos de cáncer de la Red) (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según región topográfica (código topográfico de CIE-O) y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según morfología (código morfológico de CIE-O) y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según comportamiento (quinto dígito del código morfológico de CIE-O) y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según lateralidad del tumor y sexo, para los 5 primeros tipos de cáncer de la red (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según método base de diagnóstico y sexo (también para los 3 primeros tipos de cáncer de la Red) (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos según tipo de cáncer (grupo tabular del diagnóstico clínico), finalidad del tratamiento actual y sexo (tabla)</li>
+  <li>Número de casos según tipo de tratamiento administrado (también para los 3 primeros tipos de cáncer de la red) (tabla y gráfico de barras horizontales)</li>
+  <li>Número de casos de cáncer tratados con cirugía según tipo de cáncer y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos de cáncer tratados con quimioterapia según tipo de cáncer y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Número de casos de cáncer tratados con radioterapia según tipo de cáncer y sexo (tabla y gráfico de barras horizontales apiladas)</li>
+  <li>Mediana de intervalo de diagnóstico según etapa de vida y sexo (tabla y boxplot)</li>
+  <li>Mediana de intervalo de diagnóstico según tipo de cáncer (tabla y boxplot)</li>
+  <li>Mediana de intervalo de tratamiento según etapa de vida y sexo (tabla y boxplot)</li>
+  <li>Mediana de intervalo de tratamiento según tipo de cáncer (tabla y boxplot)</li>
+  <li>Número de casos de cáncer fallecidos según tipo de causa básica (tabla y gráfico de barras horizontales)</li>
+  <li>Número de casos de cáncer fallecidos según causa básica (tabla y gráfico de barras horizontales)</li>
+</ol>
+<p>Todas las tablas deben definir o presentar claramente:</p>
+<ul>
+  <li>El contenido y elementos</li>
+  <li>El denominador usado para el cálculo de tasas</li>
+  <li>La distribución de frecuencias: frecuencia absoluta (número de casos) y frecuencia relativa (porcentaje), excepto para las tablas del numeral 21 al 24, por tratarse de medianas</li>
+  <li>La tasa o proporción calculada</li>
+  <li>Los criterios de exclusión</li>
+  <li>Toda tabla debe tener numeración y título siguiendo este ejemplo: "Tabla 1. Casos de cáncer según método del primer diagnóstico y sexo, Red XXXX 2024"</li>
+</ul>
+<p>Lineamientos para los gráficos:</p>
+<ul>
+  <li>Todo gráfico debe ir acompañado de una tabla con los datos utilizados</li>
+  <li>Todo gráfico debe tener título siguiendo este ejemplo: "Gráfico 1. Casos de cáncer según método del primer diagnóstico y sexo, Red XXXX 2024"</li>
+  <li>No se debe utilizar efecto 3E en los gráficos porque distorsionan las proporciones de las formas y dificultan su interpretación</li>
+</ul>
+<p>Todo informe epidemiológico anual debe contener las tablas y gráficos enumerados. Se puede añadir otros gráficos y tablas que complementen esta información básica, según el criterio de cada URO, por ejemplo, si se identifica tendencias importantes en subgrupos específicos. En estos casos, se recomienda usar solo gráficos de barras, gráficos de torta y gráficos de líneas.</p>
+<p>Para el informe epidemiológico anual nacional, en lugar de IPRESS reportante, se considera la URO reportante.</p>
+<p>El aplicativo REGINA genera tablas y gráficos de acuerdo a la información requerida para el informe epidemiológico.</p>
 </body>
 </html>
