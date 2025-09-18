@@ -1,0 +1,8 @@
+title: EPP - IAAS
+description: Módulo de autoaprendizaje para desarrollar el estudio de prevalencia puntual de IAAS en EsSalud
+theme: just-the-docs
+
+nav_enabled: true
+heading_anchors: true
+footer_content: "© 2025 OIIS - Built with Just the Docs"
+math: true
